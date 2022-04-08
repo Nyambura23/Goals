@@ -4,8 +4,11 @@ import { Goal } from '../goal';
 @Component({
   selector: 'app-goal',
   templateUrl: './goal.component.html',
-  styleUrls: ['./goal.component.css']
+  styleUrls: ['./goal.component.css'],
+  // styles: [' {color: red} ']
+
 })
+
 export class GoalComponent implements OnInit {
 
   goals:Goal[]=[
