@@ -17,6 +17,8 @@ export class GoalComponent implements OnInit {
     new Goal(6,'Set the world on fire','Because girls run the world',new Date(200,3,14)),
   ];
 
+
+
   // completeGoal(isComplete, index){
   //   if (isComplete) {
   //     this.goals.splice(index,1);
@@ -31,11 +33,17 @@ export class GoalComponent implements OnInit {
     
           if (toDelete){
             this.goals.splice(index,1)
+
           }
     }
   }
 
-  
+  addNewGoal(goal){
+    let goalLength = this.goals.length;
+    goal.id = goalLength+1;
+    goal.completeDate = new Date(goal.completeDate)
+    this.goals.push(goal)
+  }
 
   toggleDetails(index){
     this.goals[index].showDescription = !this.goals[index].showDescription;
