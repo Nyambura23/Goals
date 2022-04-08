@@ -14,7 +14,7 @@ export class GoalComponent implements OnInit {
     new Goal(3,'Visit the mall','Enjoy coffee at my fav spot',new Date(2022,1,12)),
     new Goal(4,'Get a puppy','Go to the shelter to check out some options',new Date(2019,0,18)),
     new Goal(5,'Complete Angular IP','One commit at a time',new Date(2019,2,14)),
-    new Goal(6,'Set the world on fire','Because girls run the world',new Date(200,3,14)),
+    new Goal(6,'Set the world on fire','Because girls run the world',new Date(2030,3,14)),
   ];
 
 
